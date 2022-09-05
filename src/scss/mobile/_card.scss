@@ -1,0 +1,7 @@
+@use "../util/functions" as util;
+
+.card {
+    background-color: var(--white);
+
+    border-radius: util.rem(23);
+}

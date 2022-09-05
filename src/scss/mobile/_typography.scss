@@ -1,0 +1,16 @@
+@use "../util/functions" as util;
+
+// Font family
+$font-fam: 'Kumbh Sans', sans-serif;
+
+// Font sizes
+$mobile-s: util.rem(12);
+$mobile-m: util.rem(14);
+$mobile-xl: util.rem(32);
+
+// Font weights
+$regular: 400;
+$bold: 700;
+
+// Line spacing
+$line-s: util.rem(18);
