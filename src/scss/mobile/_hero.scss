@@ -1,0 +1,29 @@
+@use "../util/functions" as util;
+@use "../global/variables" as var;
+@use "typography" as fonts;
+
+.hero {
+    display: flex;
+    flex-direction: column;
+    justify-self: center;
+
+    grid-area: 1 / 1 / 2 / 2;
+
+    margin: util.rem(48) 0 0 0;
+
+    &__img-top {
+        position: relative;
+        z-index: 999;
+
+        width: 65vw;
+    }
+
+    &__img-bottom {
+        z-index: 998;
+        position: relative;
+        top: -20vw;
+
+        width: 65vw;
+    }
+}
+

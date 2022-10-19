@@ -4,12 +4,20 @@
 
 :root {
     font-size: util.rem(16);
+    height: 100%;
 }
 
 body {
     margin: 0;
+    
+    background-image: linear-gradient(var(--purple), var(--blue));
 }
 
 main {
+    display: grid;
+    grid-template: auto / auto;
+
     background-image: linear-gradient(var(--purple), var(--blue));
+
+    padding: 0 0 util.rem(48) 0;
 }

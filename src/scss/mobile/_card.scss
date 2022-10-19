@@ -1,7 +1,57 @@
 @use "../util/functions" as util;
+@use "../global/variables" as var;
+@use "typography" as fonts;
 
 .card {
+    grid-area: 1 / 1 / 2 / 2;
+
+    margin: calc(util.rem(48) + 30vw) util.rem(24) 0;
+    padding: 30vw util.rem(24) util.rem(32);
+
+    font-family: fonts.$font-fam;
+
     background-color: var(--white);
 
     border-radius: util.rem(23);
+
+    filter: drop-shadow(0 util.rem(24) util.rem(24) var(--shadow));
+
+    &__content {
+
+        &-header {
+            text-align: center;
+            font-size: fonts.$mobile-xl;
+            font-weight: fonts.$bold;
+        }
+    }
+
+    &-question {
+        border-bottom: util.rem(2) solid var(--pale-blue);
+
+        margin: util.rem(16) 0;
+
+        &__link{
+            display: grid;
+            grid-template: auto / repeat(2, auto);
+
+            font-size: fonts.$mobile-m;
+            color: var(--dark-gray-blue);
+
+            margin: 0 0 util.rem(16) 0;
+        }
+
+        &__link-arrow {
+            justify-self: end;
+            align-self: center;
+        }
+
+        &__response {
+            display: none;
+            
+            font-size: fonts.$mobile-s;
+            color: var(--gray-blue);
+
+            max-width: 35ch;
+        }
+    }
 }
