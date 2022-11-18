@@ -73,7 +73,7 @@ main {
   display: none;
   font-size: 0.875rem;
   color: var(--gray-blue);
-  max-width: 35ch;
+  max-width: 90%;
 }
 
 .hero {
