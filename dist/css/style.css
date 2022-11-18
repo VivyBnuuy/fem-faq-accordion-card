@@ -62,15 +62,6 @@ main {
   font-size: 1rem;
   color: var(--dark-gray-blue);
   margin: 0 0 1rem 0;
-  /*&::after {
-      content: "";
-      background-image: url(../../../images/icon-arrow-down.svg);
-      background-repeat: no-repeat;
-      background-position: right;
-      background-size: util.rem(12);
-
-      min-width: util.rem(12);
-  }*/
 }
 .card-question__link-arrow {
   justify-self: end;
@@ -126,7 +117,7 @@ main {
   .card__background {
     grid-area: 1/1/2/2;
     display: block;
-    background-image: url("../../../images/illustration-woman-online-desktop.svg"), url("../../../images/bg-pattern-desktop.svg");
+    background-image: url("../../images/illustration-woman-online-desktop.svg"), url("../../images/bg-pattern-desktop.svg");
     background-repeat: no-repeat, no-repeat;
     background-position-x: -5.4375rem, -36.25rem;
     background-position-y: center, -18.75rem;
