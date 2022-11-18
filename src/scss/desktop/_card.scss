@@ -19,10 +19,10 @@
             grid-area: 1 / 1 / 2 / 2;
             display: block;
 
-            background-image: url("../../../images/bg-pattern-desktop.svg"), url("../../../images/illustration-woman-online-desktop.svg");
+            background-image: url("../../../images/illustration-woman-online-desktop.svg"), url("../../../images/bg-pattern-desktop.svg");
             background-repeat: no-repeat, no-repeat;
-            background-position-x: util.rem(-580), util.rem(-87);
-            background-position-y: util.rem(-300), center;
+            background-position-x: util.rem(-87), util.rem(-580);
+            background-position-y: center, util.rem(-300);
 
             &-box {
                 position: relative;
@@ -48,7 +48,7 @@
               font-size: fonts.$desktop-m;  
             }
 
-            &__response {
+            &__answer {
                 font-size: fonts.$desktop-s;
             }
         }
