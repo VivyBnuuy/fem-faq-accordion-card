@@ -1,0 +1,9 @@
+@use "../util/functions" as util;
+@use "../global/variables" as var;
+
+.card-question {
+    &__link:hover {
+        cursor: pointer;
+        color: var(--orange);
+    }
+}

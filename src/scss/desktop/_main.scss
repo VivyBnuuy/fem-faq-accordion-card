@@ -1,3 +1,14 @@
 @use "../util/functions" as util;
 @use "../global/variables" as var;
-@use "typography" as fonts;
+@use "../global/typography" as fonts;
+
+@media screen and (min-width: 980px) {
+    main { 
+        display: grid;
+        grid-template: unset;
+
+        min-height: 100vh;
+    
+        background-image: linear-gradient(var(--purple), var(--blue));
+    }
+}

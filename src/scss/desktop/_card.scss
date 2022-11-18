@@ -1,0 +1,56 @@
+@use "../util/functions" as util;
+@use "../global/variables" as var;
+@use "../global/typography" as fonts;
+
+@media screen and (min-width: 980px) {
+    .card {
+        display: grid;
+        grid-template: auto / repeat(2, 1fr);
+        align-self: center;
+        justify-self: center;
+
+        height: util.rem(510);
+        width: util.rem(920);
+
+        margin: 0 auto;
+        padding: 0;
+
+        &__background {
+            grid-area: 1 / 1 / 2 / 2;
+            display: block;
+
+            background-image: url("../../../images/bg-pattern-desktop.svg"), url("../../../images/illustration-woman-online-desktop.svg");
+            background-repeat: no-repeat, no-repeat;
+            background-position-x: util.rem(-580), util.rem(-87);
+            background-position-y: util.rem(-300), center;
+
+            &-box {
+                position: relative;
+                top: util.rem(210);
+                left: util.rem(-95);
+            }
+        }
+
+        &__content {
+            grid-area: 1 / 2 / 2 / 3;
+            align-self: center;
+
+            margin-right: util.rem(80);
+
+            &-header {
+                text-align: left;
+                font-size: fonts.$desktop-xl;
+            }
+        }
+
+        &-question {
+            &__link {
+              font-size: fonts.$desktop-m;  
+            }
+
+            &__response {
+                font-size: fonts.$desktop-s;
+            }
+        }
+    }
+}

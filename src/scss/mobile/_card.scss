@@ -1,14 +1,14 @@
 @use "../util/functions" as util;
 @use "../global/variables" as var;
-@use "typography" as fonts;
+@use "../global/typography" as fonts;
 
 .card {
     grid-area: 1 / 1 / 2 / 2;
 
-    margin: calc(util.rem(48) + 30vw) util.rem(24) 0;
+    margin: calc(util.rem(48) + 30vw) util.rem(24) util.rem(48);
     padding: 30vw util.rem(24) util.rem(32);
 
-    font-family: fonts.$font-fam;
+    height: fit-content;
 
     background-color: var(--white);
 
@@ -16,6 +16,10 @@
 
     filter: drop-shadow(0 util.rem(24) util.rem(24) var(--shadow));
 
+    &__background {
+        display: none;
+    }
+    
     &__content {
 
         &-header {
@@ -43,6 +47,8 @@
         &__link-arrow {
             justify-self: end;
             align-self: center;
+            
+            width: calc(util.rem(10) + 0.5vw);
         }
 
         &__response {

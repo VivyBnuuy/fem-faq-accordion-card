@@ -4,9 +4,13 @@
 $font-fam: 'Kumbh Sans', sans-serif;
 
 // Font sizes
-$mobile-s: util.rem(12);
-$mobile-m: calc(util.rem(11.125) + 0.5vw);
-$mobile-xl: calc(util.rem(30.125) + 0.5vw);
+$mobile-s: util.rem(14);
+$mobile-m: util.rem(16);
+$mobile-xl: util.rem(32);
+
+$desktop-s: util.rem(14);
+$desktop-m: util.rem(16);
+$desktop-xl: util.rem(32);
 
 // Font weights
 $regular: 400;
