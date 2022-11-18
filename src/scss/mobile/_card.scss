@@ -43,16 +43,6 @@
             color: var(--dark-gray-blue);
 
             margin: 0 0 util.rem(16) 0;
-
-            /*&::after {
-                content: "";
-                background-image: url(../../../images/icon-arrow-down.svg);
-                background-repeat: no-repeat;
-                background-position: right;
-                background-size: util.rem(12);
-
-                min-width: util.rem(12);
-            }*/
         }
 
         &__link-arrow {
