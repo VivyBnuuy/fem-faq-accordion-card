@@ -17,6 +17,6 @@ For this challenge, I used the following:
 - As mentioned above, this ended up being more of a CSS challenge than it was for JavaScript - I used similar code as what I wrote on <a href="https://github.com/LazyDuckling/fem-intro-component-signup-form" target="_blank">this project</a>. I did play around with a couple different ways for the chevrons on the questions, however - I tried background images, :after selector element and ended up going with images, as that was the easiest to manipulate with JavaScript.
 
 # The End
-Thanks for checking out my solution to this challenge! If you have any feedback, I would love if you reached out to me or left a comment on my <a href="https://www.frontendmentor.io/solutions/faq-accordion-card-sassscss-bem-css-grid-and-js-XLmk_8hS2s" target="_blank">solution page</a> - I'm always looking to improve!
+Thanks for checking out my solution to this challenge! If you have any feedback, I would love if you reached out to me or opened an issue if there's anything that needs fixing; I'm always looking to improve!
 
 Happy coding!
